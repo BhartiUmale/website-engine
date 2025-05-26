@@ -87,9 +87,9 @@
               "cta_link": "/contact"
             },
             "items": [
-              { "title": "Home", "cta_link": "#hero-section", "position": 1 },
-        { "title": "About", "cta_link": "#about-section", "position": 2 },
-        { "title": "Services", "cta_link": "#services-section", "position": 3 },
+              { "title": "Home", "cta_link": "#hero-section", "position": 1 }, { "title": "Services", "cta_link": "#services-section", "position": 2 },
+        { "title": "About", "cta_link": "#about-section", "position": 3 },
+       
         { "title": "Contact", "cta_link": "#contact-section", "position": 4 }
             ]
           },
