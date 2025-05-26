@@ -36,6 +36,31 @@ export const MOCK_DATA = {
     },
   },
   sections: [
+    {
+          i: "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+          page_i: "a6452a55-af24-40db-9490-42852c3e7b9a",
+          typ: "header",
+          varian: "3",
+          positio: 0,
+          is_activ: true,
+          conten: {
+            i: "9b742a78-b86f-4a6a-9f0c-f39747ec5d3f",
+            section_i: "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+            titl: "Glowiva",
+            subtitl: "Subtitle",
+            descriptio: "Description for the new section",
+            image_ur: "https://i.ibb.co/2LcZ3BQ/logo.webp",
+            background_ur: null,
+            cta_tex: "Get Started",
+            cta_lin: "/contact"
+            },
+            items: [
+              { title: "Home", cta_link: "#hero-section", position: 1 }, { title: "Services", cta_link: "#services-section", "position": 2 },
+        { title: "About", cta_link: "#about-section", position: 3 },
+       
+        { title: "Contact", cta_link: "#contact-section", position: 4 }
+            ]
+          },
     
     {
       id: "section-hero",
@@ -71,26 +96,28 @@ export const MOCK_DATA = {
       items: [
         {
           id: "service-1",
-          title: "Web Design",
-          description:
-            "Custom websites designed to attract and convert customers.",
-          icon: "desktop",
+          title: "Haircut & Styling",
+           subtitle: "Professional Look",
+          description:"Trendy haircuts and styling for every occasion and face shape.",
+          icon: "scissors",
           position: 1,
         },
         {
           id: "service-2",
-          title: "Social Media Marketing",
+          title:  "Hair Coloring",
+          subtitle: "Bold or Subtle",
           description:
-            "Strategic social media campaigns that build your brand.",
-          icon: "share",
+           "From highlights to global coloring, we bring your hair color dreams to life.",
+          icon: "palette",
           position: 2,
         },
         {
           id: "service-3",
-          title: "SEO Optimization",
+          title: "Facial Treatments",
+           subtitle: "Glow Naturally",
           description:
-            "Improve your search rankings and get found by customers.",
-          icon: "search",
+            "Custom facials tailored to your skin type for a radiant look.",
+          icon: "share",
           position: 3,
         },
       ],
@@ -102,27 +129,38 @@ export const MOCK_DATA = {
       position: 3,
       is_active: true,
       content: {
-        title: "What Our Clients Say",
-        subtitle: "Testimonials",
+        title: "Client Love",
+        subtitle: "What Our Gorgeous Clients Say",
+         description: "Discover how we’ve helped our clients feel confident, radiant, and pampered—straight from their hearts."
       },
       items: [
         {
           id: "testimonial-1",
-          title: "John umale",
-          subtitle: "CEO, Smith Enterprises",
+          title:"John Smith",
+          subtitle: "Bridal Client",
           description:
-            "D2D transformed our online presence. Our website looks amazing and our social media engagement has doubled!",
-          image_url: "/images/testimonial1.jpg",
+            "The bridal makeover I got here was absolutely flawless. They made me feel like a queen on my special day!",
+          image_url: "https://randomuser.me/api/portraits/men/32.jpg",
           rating: 5,
           position: 1,
         },
         {
           id: "testimonial-2",
-          title: "Sarah Johnson",
-          subtitle: "Owner, Johnson Bakery",
+          title: "Emily Carter",
+          subtitle:  "Skincare Enthusiast",
           description:
-            "I was amazed at how quickly they delivered our new website. The design perfectly matches our brand and our customers love it!",
-          image_url: "/images/testimonial2.jpg",
+            "This salon is my go-to for facials and skincare. The results are amazing and the ambiance is so relaxing. Highly recommended!",
+          image_url: "https://randomuser.me/api/portraits/women/23.jpg",
+          rating: 5,
+          position: 2,
+        },
+         {
+          id: "testimonial-3",
+          title: "Ava Thompson",
+          subtitle:  "Regular Client",
+          description:
+           "Absolutely love the service here! The staff is so friendly and professional — I always leave feeling refreshed and pampered.",
+          image_url:  "https://randomuser.me/api/portraits/women/21.jpg",
           rating: 5,
           position: 2,
         },
@@ -135,53 +173,21 @@ export const MOCK_DATA = {
       position: 4,
       is_active: true,
       content: {
-        title: "About Us",
-        subtitle: "Our Story",
+        title: "Our Story",
+        subtitle: "Where Beauty Meets Confidence",
         description:
-          "D2D was founded with a passion for helping small businesses succeed online. With years of experience in web development and digital marketing, we provide the tools and strategies necessary for businesses to thrive in the digital landscape.",
-        image_url: "/images/about-image.jpg",
+       "At Glowiva, we believe beauty is more than skin deep—it's a reflection of your inner confidence and care. Founded with passion and precision, our salon is a sanctuary for self-love, offering personalized services that pamper, refresh, and uplift. From the moment you walk in, our mission is to make you feel radiant, inside and out.",
+        image_url:"/aboutpage.png",
       },
       items: [],
     },
-    {
-      id: "section-faq",
-      type: "faq",
-      variant: "1",
-      position: 5,
-      is_active: true,
-      content: {
-        title: "Frequently Asked Questions",
-        subtitle: "Common Questions",
-      },
-      items: [
-        {
-          id: "faq-1",
-          title: "How long does it take to build a website?",
-          description:
-            "Most websites can be completed within 2-4 weeks, depending on complexity and content requirements.",
-          position: 1,
-        },
-        {
-          id: "faq-2",
-          title: "Do you provide ongoing support?",
-          description:
-            "Yes, we offer various maintenance packages to keep your website updated and secure.",
-          position: 2,
-        },
-        {
-          id: "faq-3",
-          title: "How much does a website cost?",
-          description:
-            "Our pricing varies based on your specific needs. Contact us for a personalized quote.",
-          position: 3,
-        },
-      ],
-    },
+   
+  
     {
       id: "section-contact",
       type: "contact",
       variant: "1",
-      position: 6,
+      position: 5,
       is_active: true,
       content: {
         title: "Contact Us",
@@ -191,6 +197,27 @@ export const MOCK_DATA = {
       },
       items: [],
     },
+    
+          {
+            id: "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+            page_id: "a6452a55-af24-40db-9490-42852c3e7b9a",
+            type: "footer",
+            variant: "1",
+            position: 6,
+            is_active: true,
+            content: {
+              id: "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
+              section_id: "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+              title: "Glowiva",
+              subtitle: "Your Beauty, Our Passion",
+              description: "Welcome to Glowiva – where beauty meets perfection. Visit us for hair styling, skin care, bridal packages and more.",
+              image_url: null,
+              bacground_url: null,
+              cta_text: null,
+              cta_link: null
+            },
+            items: []
+          }
   ],
   theme: {
     primarysite: "#4F46E5",

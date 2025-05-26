@@ -5,12 +5,12 @@ import { Button } from '@/components/ui/button';
 export default function Hero2({ content, items, theme, config }) {
   // Fallback values if content is not provided
   const {
-    title = 'Welcome to our website',
+    title = 'Glow with Confidence',
     subtitle = 'Your subtitle here',
     description = 'This is a brief description of what you do. Add a few sentences to introduce your business to new visitors.',
      image_url = '/placeholder-hero.jpg',
     background_url,
-    cta_text = 'Get Started',
+    cta_text = 'Book Appoinment',
 
     cta_link = '#',
   } = content || {};
