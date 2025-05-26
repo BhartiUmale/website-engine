@@ -36,6 +36,7 @@ export const MOCK_DATA = {
     },
   },
   sections: [
+    
     {
       id: "section-hero",
       type: "hero",
@@ -105,7 +106,7 @@ export const MOCK_DATA = {
       items: [
         {
           id: "testimonial-1",
-          title: "John Smith",
+          title: "John umale",
           subtitle: "CEO, Smith Enterprises",
           description:
             "D2D transformed our online presence. Our website looks amazing and our social media engagement has doubled!",

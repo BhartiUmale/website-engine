@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import React, { useState } from "react";
 import Link from "next/link";
 import { Phone, MapPin, Menu, X } from "lucide-react";
@@ -22,21 +22,29 @@ export default function Header1({ content, items = [], theme, config }) {
       <Link
         key={index}
         href={item.cta_link || "#"}
-        className="hover:text-primary transition-colors duration-300 relative after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
+         className="relative text-current transition-colors duration-300 hover:text-[#5E3D27] 
+      after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 
+      after:bg-[#5E3D27] after:transition-all after:duration-300 
+      hover:after:w-full"
       >
         {item.title || "Link"}
       </Link>
     ));
 
   return (
-    <header className="fixed w-full bg-background/80 backdrop-blur-md z-50 border-b">
+    <header className="fixed w-full bg-background/80 backdrop-blur-md z-50 h-[70px] border-b">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link
-          href="/"
-          className="font-bold text-xl md:text-2xl hover:text-primary transition-colors duration-300"
-        >
-          {title}
-        </Link>
+      <div className="flex items-center justify-center">
+         <Link
+  href="/"
+  className="text-3xl font-extrabold text-[#5E3D27] tracking-wide hover:text-[#8B5E3C] transition-colors duration-300 dancing-script-bold"
+>
+  {title}
+</Link>
+
+
+          
+        </div>
 
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />

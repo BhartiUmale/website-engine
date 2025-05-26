@@ -20,7 +20,7 @@ export default function Hero1({ content, items, theme, config }) {
       {background_url ? (
         <div className="absolute inset-0 z-0">
           <Image
-            src={background_url}
+            src="/beaty.png"
             alt="Background"
             fill
             className="object-cover"

@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
+
+
 @import "tailwindcss";
 @import "tw-animate-css";
+
+
+.dancing-script {
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-weight: 400; /* normal */
+  font-style: normal;
+}
+
+.dancing-script-bold {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700; /* bold */
+  font-style: normal;
+}
+
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -123,4 +144,7 @@
 
 @layer utilities {
   /* Custom utility classes */
+}
+html {
+  scroll-behavior: smooth;
 }

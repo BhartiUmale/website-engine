@@ -17,10 +17,10 @@ export default function Footer1({ content, items, theme, config }) {
       // Fallback footer items
       return {
         'Company': [
-          { title: 'About', cta_link: '/about' },
-          { title: 'Our Team', cta_link: '/team' },
+          { title: 'About', cta_link: '#about-section' },
+          { title: 'Our Team', cta_link: '#about-section' },
           { title: 'Careers', cta_link: '/careers' },
-          { title: 'Contact', cta_link: '/contact' },
+          { title: 'Contact', cta_link: '#contact-section' },
         ],
         'Resources': [
           { title: 'Blog', cta_link: '/blog' },
@@ -62,63 +62,63 @@ export default function Footer1({ content, items, theme, config }) {
     '4': 'md:grid-cols-4',
   }[columns] || 'md:grid-cols-3';
 
-  return (
-    <footer className="bg-muted/30 border-t">
-      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-4">
-          {/* Company info column */}
-          <div className="lg:col-span-1">
-            <div className="flex flex-col space-y-4">
-              {image_url ? (
-                <Link href="/" className="block w-40">
-                  <Image
-                    src={image_url}
-                    alt={title}
-                    width={160}
-                    height={60}
-                    className="h-auto w-full"
-                  />
-                </Link>
-              ) : (
-                <Link href="/" className="text-xl font-bold">
-                  {title}
-                </Link>
-              )}
-              {description && (
-                <p className="text-muted-foreground">
-                  {description}
-                </p>
-              )}
-            </div>
-          </div>
-
-          {/* Links columns */}
-          <div className={`lg:col-span-3 grid gap-8 ${gridCols}`}>
-            {footerGroupKeys.map((group) => (
-              <div key={group}>
-                <h3 className="font-semibold">{group}</h3>
-                <ul className="mt-4 space-y-3">
-                  {footerGroups[group].map((link, index) => (
-                    <li key={index}>
-                      <Link
-                        href={link.cta_link || '#'}
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        {link.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="mt-12 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          {copyright}
+  return (<footer className="bg-[#5E3D27]/10 border-t border-[#5E3D27]/30 shadow-inner">
+  <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <div className="grid gap-10 lg:grid-cols-4">
+      {/* Brand Info */}
+      <div className="lg:col-span-1">
+        <div className="flex flex-col space-y-4">
+          {image_url ? (
+            <Link href="/" className="block w-40">
+              <Image
+                src={image_url}
+                alt={title}
+                width={160}
+                height={60}
+                className="h-auto w-full object-contain"
+              />
+            </Link>
+          ) : (
+            <Link href="/" className="text-2xl font-bold text-[#5E3D27]">
+              {title}
+            </Link>
+          )}
+          {description && (
+            <p className="text-sm text-[#5E3D27]/80 leading-relaxed">
+              {description}
+            </p>
+          )}
         </div>
       </div>
-    </footer>
+
+      {/* Link Groups */}
+      <div className={`lg:col-span-3 grid gap-8 sm:grid-cols-2 md:grid-cols-3`}>
+        {footerGroupKeys.map((group) => (
+          <div key={group}>
+            <h3 className="text-[#5E3D27] font-semibold mb-4">{group}</h3>
+            <ul className="space-y-2">
+              {footerGroups[group].map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.cta_link || '#'}
+                    className="text-sm text-[#5E3D27]/70 hover:text-[#5E3D27] transition-colors"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Divider */}
+    <div className="mt-12 border-t border-[#5E3D27]/20 pt-6 text-center text-sm text-[#5E3D27]/70">
+      © {new Date().getFullYear()} Glamour Touch. All rights reserved.
+    </div>
+  </div>
+</footer>
+
   );
 } 

@@ -27,7 +27,7 @@ export default function Header2({ content, items, theme, config }) {
               </div>
             </Link>
           ) : (
-            <Link href="/" className="text-xl font-bold">
+            <Link href="/" className="text-xl text-red-200 font-bold">
               {title}
             </Link>
           )}

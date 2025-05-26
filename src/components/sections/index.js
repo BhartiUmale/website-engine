@@ -22,12 +22,14 @@ import CTA2 from './CTA2';
 import Team1 from './Team1';
 import Team2 from './Team2';
 
+
 // Map component keys to their respective React components
 export const componentMap = {
   // Headers
   header_1: Header1,
   header_2: Header2,
   header_3: Header3,
+
   // Heroes
   hero_1: Hero1,
   hero_2: Hero2,
