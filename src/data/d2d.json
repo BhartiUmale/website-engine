@@ -110,7 +110,7 @@
               "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
               "background_url": "/b.png",
               "cta_text": "Book Appoinment",
-              "cta_link": "/contact"
+              "cta_link": "#contact"
             },
             "items": []
           },

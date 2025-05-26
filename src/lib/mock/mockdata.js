@@ -44,13 +44,15 @@ export const MOCK_DATA = {
       position: 1,
       is_active: true,
       content: {
-        title: "Grow Your Business Online1 ",
-        subtitle: "Professional Web Solutions",
+        title: "Glow with Confidence",
+        subtitle: "Modern Beauty Experiences",
         description:
-          "We help small businesses establish a strong online presence with beautiful websites and effective social media marketing.",
-        image_url: "/images/hero-image.jpg",
-        cta_text: "Get Started",
-        cta_link: "/contact",
+          "At Glowiva, we offer indulgent, personalized beauty treatments that leave you radiant from the inside out. Discover a new glow with every visit.",
+      
+         background_url: "/b.png",
+        cta_text: "Book Appoinment",
+        
+        cta_link: "#contact",
       },
       items: [],
     },
